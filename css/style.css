@@ -1,0 +1,403 @@
+:root {
+    --color-primary: #000D35;
+    --color-secondary: #FFF;
+    --color-accent: #0098EB;
+    --color-background: #E3E3E3;
+    --blue-primary: #0082C7
+}
+
+.top-bar {
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    width: 100%;
+    padding-right: 1.5625rem;
+}
+
+.top-bar__brand-txt {
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left:  56.24rem; /*899.84px*/
+
+}
+
+.top-bar__brand-nav {
+    display: flex;
+    height: 4.25rem;
+    padding: 0 2.375rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #FFF;
+}
+
+.top-bar__btn-contact {
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.m__s-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.s-1__img-frame{
+    display: flex;
+    padding: 5rem 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11.625rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url(../assets/img1Back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s-1__txt{
+    align-self: stretch;
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.s-1__txt-2{
+    display: flex;
+    height: 5.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    color: var(--color-secondary);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Mulish;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.s-1__btn{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    background: #FFF;
+}
+.s-1__btn-txt{
+    color: var(--color-primary);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Merriweather;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 80% */
+}
+.m__s-2{
+    display: flex;
+    padding: 6rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.s-2__txt{
+    flex: 1 0 0;
+    color: var(--color-primary);
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.m__s-3{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: #E3E3E3;
+}
+.s-3__c-1, .s-3__c-2, .s-3__c-3{
+    display: flex;
+    height: 17.625rem;
+    padding: 8px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+.c-1__img, .c-2__img, .c-3__img{
+    flex: 1 0 0;
+    align-self: stretch;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.c-1__img {
+    background-image: url('../assets/img2.jpg');
+}
+
+.c-2__img {
+    background-image: url('../assets/img3.jpg');
+}
+
+.c-3__img {
+    background-image: url('../assets/img4.jpg');
+}
+.c-1__txt-1, .c-2__txt-1, .c-3__txt-1{
+    align-self: stretch;
+    color: var(--color-primary);
+    /* Merryweather - Bold */
+    font-family: Merriweather;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.c-1__txt-2, .c-2__txt-2, .c-3__txt-2{
+    align-self: stretch;
+    color: var(--color-primary);
+    /* Mulish - Light */
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.m__s-4{
+    display: flex;
+    padding: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    background: var(--color-secondary);
+}
+.c-4__txt-1{
+    align-self: stretch;
+    color: var(--color-primary);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.c-4__txt-2{
+    align-self: stretch;
+    color: var(--color-primary);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Mulish;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.m__s-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: #1A2149;
+}
+.c-5__img-frame{
+    display: flex;
+    height: 45.4791875rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+.c-5__img{
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url(../assets/logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-6__txt-frame{
+    display: flex;
+    height: 45.4791875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    flex: 1 0 0;
+}
+.c-6__txt-1{
+    align-self: stretch;
+    color: var(--color-secondary);
+    font-family: Merriweather;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.c-6__txt-2, .c-6__txt-3{
+    align-self: stretch;
+    color: var(--color-secondary);
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.m__s-6{
+    display: flex;
+    padding: 196px 296px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21.375rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: var(--color-secondary);
+}
+.c-7__txt-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem;
+    flex: 1 0 0;
+}
+.c-7__txt-1{
+    align-self: stretch;
+    color: var(--color-primary);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Merriweather;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.c-7__txt-2{
+    align-self: stretch;
+    color: var(--color-primary);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+.form{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: var(--color-secondary);
+    box-shadow: 0 0.5rem 1.875rem 0 rgba(0, 0, 0, 0.25);
+}
+.form-name, .form-email, .form-area{
+    display: flex;
+    width: 22rem;
+    padding: 1.25rem;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    background: var(--color-secondary);
+    border: 1px solid var(--color-accent);
+    color: #868686;
+    gap: 1px;
+    font-style: normal;
+    font-weight: 700;
+    font-family: Merriweather;
+    font-feature-settings: 'clig' off, 'liga' off;
+    line-height: 1.5rem;
+}
+.form-name, .form-email{
+    align-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+.form-area{
+    height: 12.5rem;    
+    resize: none;
+}
+.form-name__txt{
+    flex: 1 0 0;
+    color: #868686;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Merriweather;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.form-submit{
+    display: flex;
+    width: 24.625rem;
+    height: 60px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--blue-primary);
+}
+.bottom-bar{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #000D35;
+}
+.bottom-bar__txt-1{
+    color: var(--color-secondary);
+/* Merryweather - Light */
+    font-family: Merriweather;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+@media only screen and (max-width: 360px) {
+    .top-bar {
+        display: flex;
+    width: 393px;
+    height: 80px;
+    padding: 8px 28px;
+    justify-content: center;
+    align-items: center;
+    }
+}
