@@ -10,7 +10,7 @@ Consistia em realizar um projeto à escolha do aluno, no qual ele implementaria 
   - `style.css`: Arquivo principal de estilos.
 - **img**: Pasta para armazenar imagens utilizadas no site.
 - **js**: Contém arquivos JavaScript.
-  - `mobile-navbar.js`: Arquivo JavaScript para manipulação da barra de navegação em dispositivos móveis.
+  - `script.js`: Arquivo JavaScript para manipulação da barra de navegação em dispositivos móveis.
 - **index.html**: Página principal do site.
 - **service.html**: Página de serviços.
 
