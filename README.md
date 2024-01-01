@@ -1,6 +1,7 @@
 # ÆonFlux Cybersecurity Website
 
-Este repositório contém o código-fonte para o website da empresa de cibersegurança ÆonFlux.
+Este repositório contém o código-fonte para o website da empresa de cibersegurança ÆonFlux (fictício) para o projeto do Senac Prof - Arley (Santos/SP).
+Consistia em realizar um projeto à escolha do aluno, no qual ele implementaria o conteúdo aprendido ao longo do curso.
 
 ## Estrutura do Projeto
 
