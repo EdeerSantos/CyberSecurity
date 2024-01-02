@@ -16,6 +16,8 @@ Consistia em realizar um projeto à escolha do aluno, no qual ele implementaria 
 
 ## Dependências Externas
 
+- (https://www.figma.com/files/project/112289938/Team-project?fuid=1292696038096433279): Wireframe (Desktop, Mobile) / Protótipo (Desktop, Mobile).
+
 - [Google Fonts](https://fonts.google.com): Fontes Merriweather e Mulish são utilizadas no site.
 
 ## Estrutura da Página
