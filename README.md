@@ -1,6 +1,7 @@
 # ÆonFlux Cybersecurity Website
 
-Este repositório contém o código-fonte para o website da empresa de cibersegurança ÆonFlux.
+Este repositório contém o código-fonte para o website da empresa de cibersegurança ÆonFlux (fictício) para o projeto do Senac Prof - Arley (Santos/SP).
+Consistia em realizar um projeto à escolha do aluno, no qual ele implementaria o conteúdo aprendido ao longo do curso.
 
 ## Estrutura do Projeto
 
@@ -9,11 +10,13 @@ Este repositório contém o código-fonte para o website da empresa de cibersegu
   - `style.css`: Arquivo principal de estilos.
 - **img**: Pasta para armazenar imagens utilizadas no site.
 - **js**: Contém arquivos JavaScript.
-  - `mobile-navbar.js`: Arquivo JavaScript para manipulação da barra de navegação em dispositivos móveis.
+  - `script.js`: Arquivo JavaScript para manipulação da barra de navegação em dispositivos móveis.
 - **index.html**: Página principal do site.
 - **service.html**: Página de serviços.
 
 ## Dependências Externas
+
+- (https://www.figma.com/files/project/112289938/Team-project?fuid=1292696038096433279): Wireframe (Desktop, Mobile) / Protótipo (Desktop, Mobile).
 
 - [Google Fonts](https://fonts.google.com): Fontes Merriweather e Mulish são utilizadas no site.
 
