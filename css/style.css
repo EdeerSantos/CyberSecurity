@@ -11,51 +11,67 @@
 
 .home {
     display: flex;
-    width: 100%;
-    height: 804px;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    background: url(../assets/homeBack.jpeg) center center;
-    background-size: cover;
+    height: 85vh;
+    background: center / cover no-repeat url(../assets/homeBack.jpeg);
 }
-.navHome {
+.nav {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex: 1 0 0; /* Ocupa todo espaço. */
-    height: 144px;
+    height: 15vh;
     border-bottom: 1px solid var(--color-gray);
-    flex-wrap: wrap;
 }
 .navLogo {
     display: flex;
     padding: 64px 64px;
-    align-items: flex-start; 
+    align-items: center; 
     height: 100%;
 }
+
 .navLogo a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
     color: var(--color-white);
-    text-align: center;
     font-family: Merriweather; /* Bold */
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;  
+    line-height: normal;
 }
 
-.nav {
+.hamburger {
+    width: 30px;
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--color-black);
+    cursor: pointer;
+    position: fixed;
+    top: 6%;
+    right: 16px;
+    z-index: 2;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-black);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navList {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 32px;
     flex: 1 0 0;
     height: 100%;
 }
 
-.nav li {
+.navList li {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -63,7 +79,7 @@
     position: relative; /* Position relative para posicionar o pseudo-elemento (before). */
 }
 
-.nav li:before {
+.navList li:before {
     content: "";
     position: absolute;
     bottom: -1%;
@@ -76,14 +92,12 @@
     transition: opacity 200ms ease-in-out;
 }
 
-.nav li:hover:before {
+.navList li:hover:before {
     opacity: 1; /* Mostra ao passar o mouse. */ 
 }
 
-.nav li a {
+.navList li a {
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-self: stretch;
@@ -93,12 +107,12 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;       
+    line-height: normal;      
 }
 
 .navBtn { /* Link button, search button. */ 
     display: flex;
-    padding: 0px 32px;
+    padding-inline: 32px;
     align-items: center;
     gap: 32px;
     align-self: stretch;
@@ -108,11 +122,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    transition: 0.4s;
-}
-
-.link1:hover, .link2:hover {
-    transform: scale(1.1);
 }
 
 .rectangle1 { 
@@ -124,8 +133,8 @@
 
 .link1 p {
     position: absolute;
-    left: 15%; /* (eixo x) */
-    top: 50%; /* (eixo y) */
+    left: 15%;
+    top: 50%;
     transform: translateY(-50%); /* Para centralizar verticalmente (eixo Y). */
     color: var(--color-white);
     text-align: center;
@@ -183,34 +192,33 @@
 }
 
 .searchBox { /* SEARCH BOX FRAME */
-    border-radius: 5px;
-    height: 40px;
-    padding-left: 15px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
 }
 
 .searchIn { /* INPUT */
-    border: none;
-    background: none;
+    display: none;
+    position: absolute;
+    left: 80px;
     outline: none;
-    float: left;
-    padding: 0;
-    color: var(--color-black);
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
+    border-radius: 50px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
 }
 
 .searchBtn { /* SVG */
-    background-color: transparent;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .link2 {
@@ -219,7 +227,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    transition: 0.4s;
+    position: relative;
 }
 
 .rectangle2 {
@@ -283,12 +291,9 @@
 
 .section2Frame {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 64px;
-    align-self: stretch;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
 }
 
 .section2Card1, .section2Card2, .section2Card3 {
@@ -306,6 +311,7 @@
     background-repeat: no-repeat;
     background-position: center; 
 }
+
 .card1Img {
     background-image: url('../assets/img2.jpg');
 }
@@ -317,6 +323,7 @@
 .card3Img {
     background-image: url('../assets/img4.jpg');
 }
+
 .card1Txt1, .card2Txt1, .card3Txt1 {
     align-self: stretch;
     width: 100%;
@@ -328,6 +335,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .card1Txt2, .card2Txt2, .card3Txt2 {
     align-self: stretch;
     width: 100%;
@@ -340,6 +348,7 @@
     font-weight: 300;
     line-height: normal;
 }
+
 .section3 {
     display: flex;
     padding: 6rem;
@@ -350,6 +359,7 @@
     align-self: stretch;
     background: var(--color-secondary);
 }
+
 .section3Txt1 {
     align-self: stretch;
     color: var(--color-primary);
@@ -360,6 +370,7 @@
     font-weight: 300;
     line-height: normal;
 }
+
 .section3Txt2 {
     align-self: stretch;
     color: var(--color-primary);
@@ -370,6 +381,7 @@
     font-weight: 400;
     line-height: normal;
 }
+
 .section4 {
     display: flex;
     justify-content: center;
@@ -379,18 +391,11 @@
 }
 
 .section4ImgFrame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    flex: 1 0 0;
-    flex-wrap: wrap;
+    width: 50%;
 }
 
 .section4Img {
     height: 720px;
-    flex: 1 0 0;
     background-image: url(../assets/logo.png);
     background-size: cover;
     background-position: center;
@@ -399,12 +404,10 @@
 
 .section4TxtFrame {
     display: flex;
-    padding: 48px 24px;
     flex-direction: column;
-    align-items: center;
+    padding: 96px;
     gap: 18px;
     flex: 1 0 0;
-    align-self: stretch;
 }
 
 .section4Txt1 {
@@ -555,3 +558,131 @@
     font-weight: 300;
     line-height: normal;
 }
+
+@media (max-width: 1100px) {
+    
+    .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    }
+
+    .nav {
+        justify-content: center;
+        flex: 0 0 0;
+        width: 100%;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navList {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--color-primary);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+
+    .navList a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .navList li:before {
+        display: none;
+    }
+    .navList li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+    .navList li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+    .navList li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+    
+    /* Estilos ativos */
+
+    .nav.active .navList a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 6%;
+        right: 16px;
+        border-top-color: transparent;
+    }
+    
+    .nav.active .hamburger::before {
+        background-color: var(--color-white);
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        background-color: var(--color-white);
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .nav.active .navList {
+        clip-path: circle(1500px at 90% -15%); /* 1500px is a big number to make sure the nav is fully visible */
+        pointer-events: all;
+    }
+
+    .nav.active .navTxt {
+        display: none;
+    }
+    .nav.active .navList {
+        z-index: 1; 
+    }
+     /* Estilos ativos FIM */
+
+    .navTxt {
+        position: static;
+    }
+
+    .section2Frame {
+        gap: 64px;
+        flex-direction: column;
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+        
+    .section4ImgFrame {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section5 {
+        flex-direction: column;
+        padding: 48px 24px;
+    }
+    
+    .section5TxtFrame {
+        align-items: center;
+        gap: 48px;
+    }
+    
+    .formFrame {
+        align-items: center;
+        gap: 48px;
+    }
+}
+
